@@ -22,11 +22,6 @@ app.use(express.static('dist'))
 
 mongoose.set('strictQuery', false)
 mongoose.connect(MONGODB_URI)
-// mongoose.connect(url).then(() => {
-//     console.log('connected')
-// }).catch(err => console.log(err))
-
-//console.log("NODE_ENV is ", process.env.NODE_ENV);
 
 
 app.use(express.json())
